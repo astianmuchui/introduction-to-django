@@ -1,6 +1,0 @@
-#!/bin/bash
-git status
-git add .
-git commit -m "still learning"
-git push https://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@github.com/astianmuchui/introduction-to-django.git
-
