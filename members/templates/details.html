@@ -1,11 +1,11 @@
-{%extends "master.html"%}
+{% extends "master.html"%}
     
-{%block title%}
+{% block title %}
     {{member.firstname}}
-{%endblock%}
+{% endblock %}
     
-{%block content%}
-<ul>
+{% block content %}
+    <ul>
         <li>{{member.firstname}} {{member.lastname}}</li>
     </ul>
 
@@ -14,4 +14,4 @@
 
     <a href="/members/">Back</a>
 
-{%endblock%}
+{% endblock %}
