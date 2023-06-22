@@ -4,4 +4,3 @@ from django.http import HttpResponse
 
 def about_view(request):
     return HttpResponse("About View")
-
