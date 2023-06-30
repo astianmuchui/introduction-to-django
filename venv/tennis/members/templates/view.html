@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}
+    Django Init
+{% endblock %}
+
+{% block content %}
+
+    <header class="bg-black h-60 flex-row wv-100">
+        <p class="m-left-10 m-top-10 text-white">Django Init</p>
+
+    </header>
+        <a href="/users" class="btn-black mp-left-10 m-top-20 n-edgy p-7 text-small"> Back Home</a>
+
+    <main class="wv-100 hv-90 center-xy">
+        <h4 class="text-black">All Users</h4>
+
+                {% for user in users %}
+                    <p>
+
+                        <h5 class="m-bottom-20 m-top-10"> {{user.uname}} {{user.email}}</h5>
+                    </p>
+                {% endfor %}
+
+    </main>
+{% endblock %}

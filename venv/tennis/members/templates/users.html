@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}
+    Django Init
+{% endblock %}
+
+{% block content %}
+
+    <header class="bg-black h-60 flex-row wv-100">
+        <p class="m-left-10 m-top-10 text-white">Django Init</p>
+
+    </header>
+        <a href="all" class="btn-black mp-left-10 m-top-20 n-edgy p-7 text-small"> View Users</a>
+
+    <main class="wv-100 hv-90 center-xy">
+        <h4 class="text-black">Add User</h4>
+        <form action="#" method="post" class="wp-50">
+            {% csrf_token %}
+
+            <input type="text" name="name" id="" placeholder="Name">
+            <input type="text" name="email" id="" placeholder="Email">
+            <button type="submit" name="submit" class="btn-black wp-80"> + Add User</button>
+        </form>
+    </main>
+{% endblock %}
